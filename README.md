@@ -38,7 +38,7 @@ Started styling for mobile:
 4. Made the table div at the end of the page a grid
 5. Added small details: font family, weight, color, line-height, padding, margin
 
-Desktop design turns the content into a white background card and the background color changes.
+Desktop design turns the main content into a white background card and the background color behind the card changes.
 
 1. Added border radius to card
 2. Added padding to card and removed margin from text area; omelette image becomes centered in card
