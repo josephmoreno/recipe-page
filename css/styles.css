@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    line-height: 1.4;
+    background-color: hsl(30, 54%, 90%);
+
+    @media (width < 716px) {
+        margin: 0;
+    }
+}
+
+.desktop-card {
+    background-color: #fff;
+    border-radius: 15px;
+    max-inline-size: 715px;
+    margin-inline: auto;
+
+    #omelette {
+        display: block;
+        max-inline-size: 100%;
+    }
+
+    @media (width > 715px) {
+        padding: 30px;
+
+        #omelette { border-radius: 15px; }
+    }
+}
+
+.main-content {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    margin-inline: 30px;
+
+    @media (width > 715px) {
+        margin-inline: 0;
+    }
+}
+
+h1, h2 {
+    font-weight: 400;
+    font-family: "Young Serif", serif;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    line-height: 1;
+}
+
+h2 { color: hsl(14, 45%, 36%); }
+
+h3 { color: hsl(332, 51%, 32%); }
+
+section { border-block-end: 1px solid rgb(209, 209, 209); }
+
+.no-border-sect { border-block-end: 0; }
+
+ul {
+    padding-inline-start: 5px;
+    list-style: none;
+}
+
+ol {
+    padding-inline-start: 24px;
+
+    li::marker {
+        color: hsl(14, 45%, 36%);
+        font-weight: 700;
+    }
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "●";
+    color: hsl(14, 45%, 36%);
+    font-size: 0.6rem;
+    margin-inline-end: 25px;
+}
+
+li {
+    padding-block: 4px;
+    padding-inline-start: 15px;
+}
+
+.card {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    padding-block: 4px;
+    padding-inline-start: 22px;
+    padding-inline-end: 46px;
+    
+    li::before { color: hsl(332, 51%, 32%); }
+}
+
+.two-col-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    p {
+        text-align: center;
+        border-block-end: 1px solid rgb(209, 209, 209);
+        margin: 0;
+        padding-block: 16px;
+    }
+
+    :nth-child(even) {
+        color: hsl(14, 45%, 36%);
+        font-weight: 700;
+    }
+
+    :nth-last-child(1), :nth-last-child(2) { border-block-end: 0; }
+}
