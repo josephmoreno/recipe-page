@@ -23,6 +23,7 @@ body {
 
     @media (width > 715px) {
         padding: 30px;
+        border-radius: 15px;
 
         #omelette { border-radius: 15px; }
     }
